@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+              tools:context=".MainActivity"
+              android:background="@android:color/white"
+              android:gravity="center_horizontal"
+              android:animateLayoutChanges="true">
+
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/logo2"
+               android:layout_margin="20dp"/>
+
+    <TextView
+            android:text="Make Your App Location-Aware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            />
+
+    <TextView
+            android:id="@+id/last_location_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"/>
+
+    <Button
+            android:id="@+id/last_known_location_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get last known location"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    <Button
+            android:id="@+id/start_tracking_location_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start tracking location"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    <Button
+            android:id="@+id/places_demo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Places API demo"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"/>
+
+</LinearLayout>
